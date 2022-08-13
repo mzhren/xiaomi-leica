@@ -4,6 +4,7 @@ export default ImageContext;
 
 export const ImageProvider = ({ children }) => {
     const [imageName, setImageName] = useState("");
+    const [loading,setLoading] = useState(false);
     const isDate = (date) => {
         return Object.prototype.toString.call(date) === "[object Date]";
     };
@@ -20,7 +21,7 @@ export const ImageProvider = ({ children }) => {
         setLastModifiedDate(formatYYYYMMDDTHHMMSS(date));
     }
     return (
-        <ImageContext.Provider value={{ imageName, setImageName, lastModifiedDate, setImageDate }}>
+        <ImageContext.Provider value={{ imageName, setImageName, lastModifiedDate, setImageDate,loading,setLoading }}>
             {children}
         </ImageContext.Provider>
     );

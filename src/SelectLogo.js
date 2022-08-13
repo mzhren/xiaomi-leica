@@ -20,8 +20,8 @@ const SelectLogo = () => {
     };
     
     return (
-        <div className='md:w-16 md:h-16 w-12 h-12 border-r-2 pr-1 flex justify-items-center'>
-            <img src={logo} alt='' className='md:w-14 md:h-14 w-10 h-10 mt-1 object-scale-down cursor-pointer justify-self-center' onClick={changeLogo} />
+        <div className='md:w-16 md:h-16 w-8 h-8 md:mr-3 mr-2'>
+            <img src={logo} alt='' className='md:w-16 md:h-16 w-8 h-8 object-cover cursor-pointer justify-self-center' onClick={changeLogo} />
         </div>
     )
 }

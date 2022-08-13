@@ -1,13 +1,12 @@
 import React,{useState,useContext} from 'react'
 import AddImage from './Icons/add_image.svg';
-import ImageContext from './ImageContext';
+import ImageContext from './GlobalContext';
 
 const SelectImage = () => {
     const [imgSrc, setImgSrc] = useState('')
     const {setImageName,setImageDate} = useContext(ImageContext);
     const handleFileChange = (e) => {
         const file = e.target.files[0];
-        console.log(file);
         setImageName(file.name);
         setImageDate(file.lastModifiedDate);
         const reader = new FileReader();
@@ -38,7 +37,7 @@ const SelectImage = () => {
 
             {imgSrc &&
             <div className='relative'>
-                <button onClick={resetImage} className="absolute top-5 right-5 bg-white py-1 px-3 rounded-full transition-all md:opacity-0 group-hover:md:opacity-100">重新上传</button>
+                <button onClick={resetImage} className="absolute top-5 right-5 bg-white py-1 px-3 rounded-full transition-all opacity-0 group-hover:opacity-100">重新上传</button>
                 <img id='selected-image' src={imgSrc} className="block align-top w-full" alt='' />
             </div>
             }
