@@ -13,10 +13,10 @@ const Download = () => {
         const width = img.width;
         const naturalWidth = img.naturalWidth;
         const scale = naturalWidth / width;
-        html2canvas(document.querySelector(selector), { // 转换为图片
+        const el = document.querySelector(selector);
+        html2canvas(el, { // 转换为图片
             useCORS: true, // 解决资源跨域问题
-            dpi: window.devicePixelRatio * 2, // 设置dpi
-            scale: scale // 设置图片放大倍数
+            scale: scale, // 设置图片放大倍数
         }).then(canvas => {
             let imgUrl = canvas.toDataURL('image/png');
             mockDownload(imgUrl, name)

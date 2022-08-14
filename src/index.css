@@ -2,62 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-  font-family: "MiSans-Normal";
-  font-size: 400;
-  src: url("./fonts/MiSans-Normal.ttf");
-}
-
-@font-face {
-  font-family: "MiSans-Normal";
+/* @font-face {
+  font-family: "MiSans";
   font-weight: 100;
   src: url("./fonts/MiSans-Thin.ttf");
 }
 
 @font-face {
-  font-family: "MiSans-Normal";
+  font-family: "MiSans";
   font-weight: 200;
   src: url("./fonts/MiSans-ExtraLight.ttf");
 }
 
 @font-face {
-  font-family: "MiSans-Normal";
-  font-weight: 300;
+  font-family: "MiSans";
   src: url("./fonts/MiSans-Light.ttf");
-}
+  font-weight: 300;
+} 
+
+
 
 @font-face {
-  font-family: "MiSans-Normal";
-  font-weight: 500;
-  src: url("./fonts/MiSans-Medium.ttf");
-}
-
-@font-face {
-  font-family: "MiSans-Normal";
-  font-weight: 600;
+  font-family: "MiSans";
   src: url("./fonts/MiSans-Demibold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "MiSans-Normal";
-  font-weight: 700;
+  font-family: "MiSans";
   src: url("./fonts/MiSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: "MiSans-Normal";
   font-weight: 800;
-  src: url("./fonts/MiSans-Semibold.ttf");
 }
 
 @font-face {
-  font-family: "MiSans-Normal";
-  font-weight: 900;
+  font-family: "MiSans";
   src: url("./fonts/MiSans-Heavy.ttf");
+  font-weight: 900;
+}*/
+
+@font-face {
+  font-family: "MiSans";
+  font-weight: 400;
+  src: url("./fonts/MiSans-Normal.ttf");
 }
 
+@font-face {
+  font-family: "MiSans";
+  src: url("./fonts/MiSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("./fonts/MiSans-Semibold.ttf");
+  font-weight: 700;
+}
 
 body{
-  font-family: MiSans-Normal;;
+  font-family: MiSans;
+}
+
+#camMaker{
+  font-family: MiSans;
 }
