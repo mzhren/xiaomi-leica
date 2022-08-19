@@ -5,18 +5,18 @@
 /* @font-face {
   font-family: "MiSans";
   font-weight: 100;
-  src: url("./fonts/MiSans-Thin.ttf");
+  src: url("./fonts/MiSans-Thin.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "MiSans";
   font-weight: 200;
-  src: url("./fonts/MiSans-ExtraLight.ttf");
+  src: url("./fonts/MiSans-ExtraLight.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Light.ttf");
+  src: url("./fonts/MiSans-Light.ttf") format('truetype');
   font-weight: 300;
 } 
 
@@ -24,37 +24,37 @@
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Demibold.ttf");
+  src: url("./fonts/MiSans-Demibold.ttf") format('truetype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Bold.ttf");
+  src: url("./fonts/MiSans-Bold.ttf") format('truetype');
   font-weight: 800;
 }
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Heavy.ttf");
+  src: url("./fonts/MiSans-Heavy.ttf") format('truetype');
   font-weight: 900;
 }*/
 
 @font-face {
   font-family: "MiSans";
   font-weight: 400;
-  src: url("./fonts/MiSans-Normal.ttf");
+  src: url("./fonts/MiSans-Normal.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Medium.ttf");
+  src: url("./fonts/MiSans-Medium.ttf") format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: "MiSans";
-  src: url("./fonts/MiSans-Semibold.ttf");
+  src: url("./fonts/MiSans-Semibold.ttf") format('truetype');
   font-weight: 700;
 }
 
